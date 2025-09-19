@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css"> <!--linkando o html ao css-->
+    <title>Login</title>
+
+</head>
+
+<body>
+
+    <div class="estrelas"></div>
+
+    <div class=" formulario">
+        <!--toda class criada é pra identificar a caixa div ou id para estilizar ou manipular, css,js e frameworks-->
+        <h1>Login</h1>
+
+        <form action="#">
+            <!--atributo action define para onde os dados do formulário serão enviados-->
+
+            <div class="caixa-formulario">
+                <input type="text" placeholder="Nome de Usuário" required> <!--required é pro campo ser obrigatório-->
+                <i class='bx bxs-user'></i>
+            </div>
+
+
+            <div class="caixa-formulario">
+                <input type="password" placeholder="Senha" required>
+                <i class='bx bxs-lock-keyhole'></i> <!--icone adicionado via link href que se encontra no head-->
+            </div>
+
+            <div class="caixa-lembrar-esqueci">
+                <label><input type="checkbox">Lembrar</label> <!--label é um texto que fica anexado junto ao input-->
+                <a href="#"> Esqueci minha senha</a>
+            </div>
+
+            <button type="submit">Entrar</button> <!--botão-->
+
+            <div class="link-registro">
+                <p>Não tem conta? <a href="#">Registrar</a> </p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
