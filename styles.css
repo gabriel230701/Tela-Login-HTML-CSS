@@ -23,6 +23,7 @@ Configuração geral do body
 - Aplica degradê no fundo
 */
 body {
+
     display: flex;
     /* ativa flexbox */
     justify-content: center;
@@ -178,4 +179,70 @@ button:hover {
 .link-registro a:hover {
     text-decoration: underline;
 
+}
+
+
+/* ======== TELA HOME ======== */
+.home-page {
+    background-color: #0a0a0a;
+    /* fundo escuro */
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.conteudo-home {
+    z-index: 2;
+}
+
+h1,
+p,
+h2 {
+    color: white;
+    margin: 10px 0;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Fundo de estrelas (mesmo estilo da tela de login) */
+.estrelas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    animation: estrelasMovimento 10s linear infinite;
+    opacity: 0.2;
+}
+
+@keyframes estrelasMovimento {
+    from {
+        background-position: 0 0, 25px 25px;
+    }
+
+    to {
+        background-position: 50px 50px, 75px 75px;
+    }
 }
