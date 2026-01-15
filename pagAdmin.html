@@ -1,0 +1,9 @@
+<script>
+    const usuario = localStorage.getItem("usuarioLogado");
+
+    if (!usuario) {
+        window.location.href = "login.html";
+    } else {
+        alert(`Bem-vindo à Página do Admin, ${usuario}! 🚀`);
+    }
+</script>
