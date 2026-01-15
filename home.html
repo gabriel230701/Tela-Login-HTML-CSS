@@ -15,7 +15,12 @@
         <h1>Bem-vindo!</h1>
         <p>Login realizado com sucesso 🎉</p>
         <h2 id="usuario"></h2>
+        <button onclick="admPg()">Página Admin</button>
+
+        <p></p>
+        
         <button onclick="logout()">Sair</button>
+        
     </div>
 
     <script>
@@ -30,6 +35,12 @@
             localStorage.removeItem("usuarioLogado");
             window.location.href = "login.html";
         }
+         // Botão Página do Admin
+        function admPg() {  
+            localStorage.removeItem("Bem vindo a Página do Admin");
+
+            window.location.href = "pagAdmin.html"};
+
     </script>
 
 </body>
